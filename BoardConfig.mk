@@ -15,9 +15,6 @@ TARGET_BOOTLOADER_BOARD_NAME := venus
 # Display
 TARGET_SCREEN_DENSITY := 560
 
-# OTA assert
-TARGET_OTA_ASSERT_DEVICE := venus
-
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     fts_touch_spi.ko \
