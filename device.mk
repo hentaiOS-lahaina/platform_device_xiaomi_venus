@@ -32,7 +32,9 @@ LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
 PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
 # Kernel Headers
-PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/venus-kernel/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS += \
+    device/xiaomi/venus-kernel/kernel-headers \
+    hardware/qcom-caf/msm-5.4/kernel-headers
 
 # Overlays
 #DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
