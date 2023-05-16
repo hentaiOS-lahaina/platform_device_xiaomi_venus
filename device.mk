@@ -25,9 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630946736638489730.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946736638489730.xml
 
-# Game Dashboard
-ENABLE_GAMETOOLS := true
-
 # Kernel
 TARGET_KERNEL_DIR ?= device/xiaomi/venus-kernel
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
@@ -38,7 +35,7 @@ PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/venus-kernel/kernel-headers
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
+#DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
 PRODUCT_PACKAGES += \
     FrameworksResVenus \
@@ -48,11 +45,13 @@ PRODUCT_PACKAGES += \
     SettingsResVenus \
     SystemUIResVenus
 
-# Pixel Launcher
-INCLUDE_PIXEL_LAUNCHER := true
+# Pixel 2022 features
+PRODUCT_PACKAGES += \
+    PixelWallpapers2022 \
+    quick_tap
 
 # Powershare
-$(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
+#$(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -64,7 +63,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_sm8350
+    #vendor.lineage.touch@1.0-service.xiaomi_sm8350
 
 # WiFi
 PRODUCT_PACKAGES += \
