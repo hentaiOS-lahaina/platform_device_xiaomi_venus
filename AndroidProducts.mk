@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_venus.mk
+    $(LOCAL_DIR)/hentai_venus.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_venus-user \
-    statix_venus-userdebug \
-    statix_venus-eng
+    hentai_venus-user \
+    hentai_venus-userdebug \
+    hentai_venus-eng
