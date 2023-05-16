@@ -50,8 +50,9 @@ PRODUCT_PACKAGES += \
     SettingsResVenus \
     SystemUIResVenus
 
-# Powershare
-$(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
+# Pixel 2022 features
+PRODUCT_PACKAGES += \
+    PixelWallpapers2022
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -60,10 +61,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_sm8350
 
 # WiFi
 PRODUCT_PACKAGES += \
