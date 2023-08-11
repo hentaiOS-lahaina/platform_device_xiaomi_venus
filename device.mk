@@ -42,13 +42,13 @@ PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/venus-kernel/kernel-headers
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
 PRODUCT_PACKAGES += \
-    FrameworksResVenus \
-    NfcResVenus \
+    NfcOverlayVenus \
+    SettingsGoogleOverlayVenus \
     SettingsOverlayM2011K2C \
     SettingsOverlayM2011K2G \
     SettingsProviderOverlayVenus \
-    SettingsResVenus \
-    SystemUIResVenus
+    SystemUIGoogleOverlayVenus \
+    VenusConfigOverlay
 
 # Pixel 2022 features
 PRODUCT_PACKAGES += \
