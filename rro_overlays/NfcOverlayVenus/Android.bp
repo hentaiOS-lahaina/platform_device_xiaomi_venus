@@ -13,6 +13,6 @@
 // limitations under the License.
 
 runtime_resource_overlay {
-    name: "NfcResVenus",
+    name: "NfcOverlayVenus",
     device_specific: true,
 }

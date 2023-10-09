@@ -42,13 +42,13 @@ PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/venus-kernel/kernel-headers
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
 PRODUCT_PACKAGES += \
-    FrameworksResVenus \
-    NfcResVenus \
+    NfcOverlayVenus \
+    SettingsGoogleOverlayVenus \
     SettingsOverlayM2011K2C \
     SettingsOverlayM2011K2G \
     SettingsProviderOverlayVenus \
-    SettingsResVenus \
-    SystemUIResVenus
+    SystemUIGoogleOverlayVenus \
+    VenusConfigOverlay
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -60,7 +60,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    TargetWifiOverlay
+    WifiOverlay
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/venus/venus-vendor.mk)
